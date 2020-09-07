@@ -5,10 +5,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello World'
+    return 'Home Page'
 
 
 @app.route('/about')
+def about():
+    return 'About Page'
+
+
 # para mantenerla escuchando siempre
 if __name__ == '__main__':
     app.run()
