@@ -10,7 +10,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return 'About Page'
+    return render_template('about.html')
 
 
 # para mantenerla escuchando siempre
